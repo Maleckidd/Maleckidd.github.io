@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-ruby "3.1.2"
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -9,7 +8,6 @@ ruby "3.1.2"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "4.2.2"
-gem "bundler", '2.3.19' 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "jekyll-theme-clean-blog"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
