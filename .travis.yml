@@ -1,7 +1,7 @@
 language: ruby
 branches:
   only:
-  - master
+  - gh-pages
 rvm:
 - 2.2.3
 before_script:
