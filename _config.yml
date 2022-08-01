@@ -1,0 +1,19 @@
+title: My testing notes
+author: Damian Małecki
+description: >- 
+  Things that I'm learning about
+url: "https://maleckidd.github.io" 
+linkedin_username: damian-malecki
+github_username: Maleckidd
+instagram_username: damian__malecki
+
+# Build settings
+theme: jekyll-theme-clean-blog
+plugins:
+  - jekyll-feed
+
+kramdown:
+  input: Kramdown
+
+markdown: kramdown
+highlighter: rouge
