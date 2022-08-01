@@ -17,7 +17,7 @@ mkdir _site
 git clone https://$GH_TOKEN@github.com/Maleckidd/Maleckidd.github.io --branch gh-pages _site
 
 # build with Jekyll into "_site"
-bundle exec jekyll build
+bundle exec jekyll serve --trace
 
 # push
 cd _site
