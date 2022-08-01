@@ -9,6 +9,10 @@ fi
 # enable error reporting to the console
 set -e
 
+# cleanup "_site"
+rm -rf _site
+mkdir _site
+
 # clone remote repo to "_site"
 git clone https://$GH_TOKEN@github.com/Maleckidd/Maleckidd.github.io --branch gh-pages _site
 

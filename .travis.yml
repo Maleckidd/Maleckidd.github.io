@@ -9,4 +9,5 @@ before_script:
 script: ./script/cibuild
 exclude: [vendor]
 sudo: false
-skip_cleanup: true
+deploy:
+  skip_cleanup: true
