@@ -4,7 +4,7 @@ title:  "Hacking of e-commerce platform"
 subtitle: "About my 1st bug bounty report"
 date:   2022-11-09 22:45:00 +0200
 categories: Security
-background: '/img/posts/02.JPG'
+background: 'https://raw.githubusercontent.com/Maleckidd/Maleckidd.github.io/gh-pages/img/posts/02.JPG'
 ---
 On a wave of increased interest and hype for security topics, I decided to try my hand at the bug bounty program, a web application for e-commerce sellers. As a QA, I have found some security flaws, so based on my experience, I was pretty optimistic to find some bugs, maybe not security ones but still. Finally I will get some new experience and also get rid of some bugs from the internet (of course if they will be worth fixing) 💪
 
