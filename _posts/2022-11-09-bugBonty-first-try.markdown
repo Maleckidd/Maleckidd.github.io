@@ -6,16 +6,16 @@ date:   2022-11-09 22:45:00 +0200
 categories: Security
 background: 'https://raw.githubusercontent.com/Maleckidd/Maleckidd.github.io/gh-pages/img/posts/02.JPG'
 ---
-On a wave of increased interest and hype for security topics, I decided to try my hand at the bug bounty program, a web application for e-commerce sellers. As a QA, I have found some security flaws, so based on my experience, I was pretty optimistic to find some bugs, maybe not security ones but still. Finally I will get some new experience and also get rid of some bugs from the internet (of course if they will be worth fixing) 💪
+On the wave of increased interest and hype surrounding security topics, I decided to try my hand at the bug bounty program for an e-commerce web application aimed at sellers. As a QA, I had already found some security flaws, so based on my experience, I was optimistic about finding some bugs, maybe not security-related, but still significant. I was excited to gain new experience and help eliminate some bugs from the internet (if they were worth fixing) 💪
 
 **`Target`** <br>
-The product which I was tasting, was for sellers to create their own shop, manage orders, clients and stock. Also on the opposite side was the client's point of view like cart, purchases and managing their own account data. 
+The product I was testing allowed sellers to create their own shops, manage orders, clients, and stock. On the opposite side, clients could manage their own accounts, make purchases, and access their cart. 
 
 **`Tools`** <br>
-The only tools I was using while testing was browsers chrome/firefox and Burp Suite Community Edition.
+The only tools I used while testing were Chrome/Firefox browsers and Burp Suite Community Edition.
 
 **`Preparations and tests`** <br>
-I made a general overview of functionalities and exploratory tests. I decided to choose a limited scope and time boxes dedicated to each of the functionalities. When flaws began to surface, finally I focused on administrators and clients account management. 
+I conducted a general overview of functionalities and exploratory tests. I chose a limited scope and time box for each functionality. When flaws began to surface, I focused on the account management for administrators and clients.
 
 **`Report`** <br>
 <b>1. Administrator panel (x/admin/edit/id/1) - changing the password in the account settings, does not expire active sessions.</b>
@@ -93,6 +93,6 @@ It is worth changing the message to not one significant, such as "The email addr
 When registering, confirmation of the email address is required, while changing the email from Profile Edit (x/panel/edit), the customer does not need to confirm the new address.
 
 **`PRICE`** <br>
-None of the reported bugs was registered as prize-worthy. Person person responding to my report thanked me and add a 1-year subscription with an invitation for further tests. 
+None of the reported bugs were considered worthy of a prize. However, the person responding to my report thanked me and offered a 1-year subscription with an invitation for further testing.
 
-I haven't back to tests of this app, the subscription is still active, so maybe I will have the opportunity to write new posts about the next reports.
+Although I haven't returned to testing this application, my subscription is still active. Therefore, I may have the opportunity to write new posts about future reports.

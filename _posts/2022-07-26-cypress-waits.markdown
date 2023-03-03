@@ -6,16 +6,13 @@ date:   2022-07-27 21:52:12 +0200
 categories: Cypress
 background: 'https://raw.githubusercontent.com/Maleckidd/Maleckidd.github.io/gh-pages/img/posts/01.JPG'
 ---
-How many times you had a problems with page elements that don't appear, too fast assertions, or too fast performed action?  I hope this article will help you solve problems with waits and will allow you to make the first step to a better future and better tests 🙂  I want to take a look at aspects that should help you improve the stability of your tests and make them more atomic. 
+How many times have you experienced problems with page elements not appearing, assertions executing too quickly, or actions being performed too fast? I hope this article will help you solve these issues with waits and take the first step towards a better future with more stable and atomic tests🙂 Let's take a closer look at aspects that can help improve test stability and make them more reliable.
 
 **`cy.wait(0)`** <br>
- One of the basic command in cypress is wait with milliseconds. All of us who start our journey with test automatization, have used to use this way to pause the tests, and probably it would be hard to find a repo without it. Very rarely the waiting time will be specified accurately and waiting until declared time probably will be waste of time. Except in situations where you have a good explanation of using it, you should find another approach of waiting. 
-
->I have encountered problems in a few applications with submitting a completed form. All data was provided but after form confirmation I received an error about incompleted data or even worse that form was saved with missing data. These situations only occured when the confirmation button has been clicked immediately after filling the form out - impossible to reproduce manually (important to be sure this situation never occurs while normal interaction with the app). The solution was to add a 1-sec wait before using the confirmation button.
-
+  One of the basic commands in Cypress is "wait" with milliseconds. As beginners in test automation, we often use this method to pause tests, and it's likely that we won't find a repo without it. However, the waiting time is very rarely specified accurately, and waiting until a declared time may be a waste of time. Unless there is a good reason to use it, you should look for another approach to waiting.
 
 **`cy.wait(@)`** <br>
-A second way of using the command cy.wait() is for waiting for @alias (or aliases). In that case, mostly you will use it in a combination with cy.intercept() command. Before performing action resulting in network communication you set cy.intercept() to spy network communication, search and assign an alias for a request which means that the backend has performed the expected action. Then cypress performs the action and waits till cy.intercept sign alias for expected request. 
+  Another way to use the command "cy.wait()" is to wait for @alias (or aliases). In this case, you will mostly use it in combination with the "cy.intercept()" command. Before taking any action that involves network communication, you set "cy.intercept()" to spy on network communication, search for and assign an alias for a request that confirms that the backend has performed the expected action. Then, Cypress performs the action and waits for the "cy.intercept" command to sign the alias for the expected request.
 
 
 <div style="background-color:lightgrey;">
@@ -29,7 +26,7 @@ cy.wait('@getAllFruits')
 
 
 **`cy.get(all)`** <br>
-The first example of waiting without using cy.wait is simple cy.get. If you need to wait utill the element exists or not, is visible or covered, etc... 
+The first example of waiting without using "cy.wait" is with "cy.get". If you need to wait until the element exists, is visible or uncovered, etc...
 
 <div style="background-color:lightgrey;">
 {% highlight javascript %}
@@ -45,8 +42,7 @@ cy.get('el').should('be.visible')
 {% endhighlight %}
 </div>
 
-Possibly that element appears after cypress reached a timeout limit, what's now? 
-There is an easy way to extend your default command timeout. You can use a timeout option. 
+What if the element appears after Cypress reaches a timeout limit? There is an easy solution - you can extend your default command timeout by using a timeout option.
 
 <div style="background-color:lightgrey;">
 {% highlight javascript %}
@@ -54,30 +50,14 @@ cy.get('el', {timeout: 10000}).should('be.visible')
 {% endhighlight %}
 </div>
 
-There is a possibility of changing default timeouts for all or selected tests but I'm not a fan of increasing timeouts globally - you should assume minimal, as low as possible, general timeout which will not affects tests. That assumption may be useful when the performance of your application will fall dramatically. Of course, you you might have some actions that takes a while longer, and that's why I present an increasing timeout for specific actions.
+It's possible to change default timeouts for all or selected tests, but I'm not a fan of increasing timeouts globally. You should assume a minimal, as low as possible, general timeout that will not affect tests. This assumption may be useful when the performance of your application falls dramatically. However, you might have some actions that take a while longer, and that's why I suggest increasing the timeout for specific actions.
 
 **`Cypress-recurse`** <br>
-Sometimes, tests are faster than application. Visiting a page too early may cause fail of assertions or some error like 404, on another hand static wait may be the cause of a significant increase of test time overall. You can write a function with command and use recursion with the condition. But this is not a perfect solution, tests can stuck in infinite loop and you can't set timeouts for the whole operation. Adding some counters and more logic to limit the count of attempts is possible, but it makes code more complicated. 
+Sometimes tests run faster than the application they are testing. If you visit a page too early, it can cause assertions to fail or errors like 404. However, using a static wait can significantly increase overall test time.
 
-<div style="background-color:lightgrey;">
-{% highlight javascript %}
-checkIsReady() {
-    cy.request({
-       url: checkIsReadyUrl,
-       failOnStatusCode: false
-    }).then((res) => {
-            if(res.code !== 200) {
-                cy.wait(1000)
-                this.checkIsReady()
-            }
-       }
-}
-{% endhighlight %}
-</div>
+A better option is to use an extension developed by one of the creators of Cypress. - <a href="https://github.com/bahmutov/cypress-recurse">cypress-recurse</a>. It allows for re-running Cypress commands until a certain condition is met. It offers the ability to set limits on the number of iterations, the delay between repetitions, and timeouts.
 
-Another option more readable and customizable. One of Cypress creators developed an extension for it - <a href="https://github.com/bahmutov/cypress-recurse">cypress-recurse</a>. It allows re-running cypress commands till the condition is met. You can set a limit of iterations, the delay between repetitions, and timeouts. 
-
-So, if you want to check if page is ready (status code is 200) for a maximum of 10 times and each iteration should go with a 1sec delay but all loop should take less than 15 seconds, here is your answer:
+For example, if you want to check if a page is ready (status code 200) up to a maximum of 10 times with a 1-second delay between each iteration, but want the entire loop to take less than 15 seconds, this extension can provide the solution.
 
 <div style="background-color:lightgrey;">
 {% highlight javascript %}
@@ -109,4 +89,4 @@ recurse(
 {% endhighlight %}
 </div>
 
-But please remember! Use re-tries in a responsible way. Don't abuse this, it shouldn't be a solution in situations where the application under test behaves in unpredictable ways. Used unproperly can reduce the effectiveness of your tests and black out the results.
+But please remember, use retries in a responsible manner. Don't abuse it as a solution for situations where the application under test behaves unpredictably. Improper use can reduce the effectiveness of your tests and obscure the results.
