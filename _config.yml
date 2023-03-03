@@ -8,7 +8,7 @@ github_username: Maleckidd
 instagram_username: damian__malecki
 
 # Build settings
-theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
 
