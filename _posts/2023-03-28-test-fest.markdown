@@ -1,0 +1,151 @@
+---
+layout: post
+title:  "test:fest 2023"
+subtitle: "About my 1st bug bounty report"
+date:   2023-03-28 22:30:00 +0200
+categories: Conferences
+background: 'https://raw.githubusercontent.com/Maleckidd/Maleckidd.github.io/gh-pages/img/posts/03.JPG'
+---
+**`About the Conference`** <br>
+[test:fest](https://testfest.pl/) is a conference that caters to people interested in software quality. The speakers mainly focus on different aspects of quality and its assurance.
+
+The conference does not have an admission fee, but participants are selected by the organizers who read through all submissions. To get a ticket, interested individuals need to fill out a registration form and justify their desire to attend.
+
+**`Location`** <br>
+Ibis Styles Wroclaw Centrum - by the main train station, pleasant access by train
+
+**`Interesting facts`** <br>
+* At the entrance, participants were given a badge with a place for stickers, which could be obtained at the partners' stands and by performing tasks. Collecting the total, allowed to participate in a drawing for three tickets for the next year and receive a gadget with the conference logo.
+* Opportunity to participate in free workshops (additional registration - places ran out very quickly) 
+* Ask:Test - consultations with specialists in various quality fields 
+* Lunch and buffet included in the entrance fee
+* Free beer for the first 100 people at the after party 
+* Opportunity to donate gadgets we didn't like so we can use them again
+
+**`Selected talks`** <br>
+I have no information on whether the presentations will be available in video form.
+
+#[Sustainability - the new quality characteristic (EN)](https://testfest.pl/rok-2023/rik-marselis/)
+A presentation focusing on delivering value and quality in the shortest possible time and the aspect of sustainability as a new quality characteristic. Details and development of the presentation topic are included in the [book](https://www.tmap.net/book/quality-devops-teams) the speaker promoted and on the [blog](https://www.tmap.net/page/news-and-blogs) ([Checklists](https://www.tmap.net/page/download-checklists)). 
+
+At the outset, the presenter defined quality as product, process and people, and the goal of automating repetitive activities and tests to achieve the expected quality in the shortest possible time. Stressing that it is not worth automating all activities. Some tasks are easier and faster to do manually, also the aspect of repeatability is important.
+
+Testing is part of Quality Engineering but QE is much more than testing  
+Quality Engineering - "Preventive" quality measures - Think about quality from the start
+Testing - "Detective" quality measures 
+provides information about quality and risks 
+Provides assurance about the delivery of business value
+consists of: verification, validation and exploration
+DevOps - Corrective quality measures - Proactive quality improvement  
+
+[VOICE model](https://www.tmap.net/page/voice-model) - delivering business value
+
+#[Quality features related to value and quality](https://www.tmap.net/wiki/quality-characteristics): 
+ISO25010 - quality in use
+ISO25010 - product quality
+
+[Sustainability as a new quality feature](https://www.tmap.net/wiki/quality-characteristic-sustainability)
+
+#[Will Playwright become a Cypress killer in 2023? (EN)](https://testfest.pl/rok-2023/prelegenci-2023/arkadiusz-jelonek/)
+The presenter is a test automation specialist with experience in Cypress and Playwright, among other tools. During the presentation, he discussed the history of Playwright's creation and compared the two tools without disregarding either one (not only these two a good choice). He highlighted the importance of being able to develop quickly and work well within a team, including ease of use for the whole team and the ability to conduct code reviews, among other factors.
+
+The presenter also addressed the question of whether Playwright will become a "Cypress killer" in 2023. He stated that this is unlikely due to Cypress' popularity on npm, which has a large base of current users. However, Playwright has gained more attention on GitHub in just three years compared to Cypress in eight years, indicating that it is rapidly gaining popularity.
+
+One of Playwright's advantages is its built-in tools, whereas in Cypress, these tools have to be installed as plug-ins, which can result in the need to check if a new version of Cypress is compatible with the plug-ins and a growing package.json file.
+
+Playwright, compared to Cypress:
+* no watch (cy open)
+* no public roadmap
+* no GUI
+* better test reports - Trace viewer
+* concurrent tests from the box
+* less weight
+
+#[Why do you need to automate accessibility testing and why is it not enough? (EN)](https://testfest.pl/rok-2023/prelegenci-2023/tomasz-bonior/)
+
+From 2024, the EU is introducing an accessibility requirement in the e-commerce, banking, telecommunications, ebook industries, and penalties for failure to make platforms compliant. The author stresses that accessibility is an important aspect of quality, and cites the WCAG standard as a good source of information on it. Before giving tips on how to test, automate and monitor accessibility, he points out that one of the most important points of accessibility testing, is to include people with disabilities in the tests (no tool can 100% convey the perspective of such a person) 
+
+A customer with a disability is the same customer as a non-disabled person but has an even harder time going through our processes. If we make it easy for him he will keep coming back to us, because of the good experience and ease of use.  If his experience is good enough, he may become a promoter of our product in the disabled community.
+
+Below are the lists of tools given by the presenter
+
+How to test?
+* Checklist wcag
+* Technical testing with tools
+* Automatic scans
+* IBM Equal Access Accessibility Checker
+* Google Lighthouse 
+* AXE DevTools
+* WAVE Evaluation Tool
+* Pa11y
+* ARC Toolkit
+
+Levels of a11y checks (each of which can be part of CI)
+* Linters
+* Unit tests
+* End-to-end tests
+* A11y scans
+
+Deployment monitoring:
+* ARC Platform
+* AXE Monitor
+* Pope.tech
+* Tenon
+* AMP
+* A11ywatch
+* Asqatasun
+* Pa11y
+
+#[Why are decisions like guests and how to make even the uninvited ones well? (EN)](https://testfest.pl/rok-2023/prelegenci-2023/jakub-konieczny/)
+Soft skill presentation on decision making and drawing value, lessons from decisions we dread. Helpful information, both in personal life and at work, e.g. choosing an approach, tools, or technology.  
+
+Methods to facilitate decision-making:
+* satisfaction method - making less important decisions faster
+* change of environment - catching distance from the problem being solved
+* saying the problem out loud and/or talking about it for deeper understanding
+* trying to present the problem in the simplest way (better understanding)
+
+The presenter gives two examples of decisions well made:
+A footballer changing clubs, made a list with his expectations of the club and the club's expectations of him. He then gave points to each of the items on the list (according to his priorities) and made a decision based on the sum of the points. Although his choice was surprising to those around him, the subsequent results and the form he presented indicate that he made the right decision.
+Relocation - Maslow's pyramid of needs to be met and the pyramid of needs that are met now (comparing the current situation and the one after the switch). This approach allowed the presenter to move more easily, he became aware of his current state and what he expects.  
+
+The author recommends following a culture of error. That is, don't sweep our stumbles under the rug, learn from them, and correct and prevent them in the future. As an example, he cited the airlines, where mistakes at their worst cost human lives and their occurrence, must mean no recurrence in the future. 
+
+One must also be wary of pitfalls in thinking, e.g., anchoring heuristics. An example was asking a question that suggested the answer. How old was the Dalai Lama at the time of his death? The answer had to be marked on a timeline, the maximum value on the axis influenced the answers i.e. When the max was 140, the most common answer was ~90, when the max was lower e.g. 100 the most common answer was also lower.
+
+Recommended books:
+Impulse. How to make the right decisions for health, wealth and happiness
+Risk Savvy - How to Make Good Decisions
+Daniel Kehlmann - The traps of thinking
+
+#[Atlassian Approach to Quality. Shift left and Quality Engineering (EN)](https://testfest.pl/rok-2023/prelegenci-2023/jakub-cegiel/)
+Presentation of the Atlassian approach to quality assurance and a story with lessons learned on how they arrived at this approach. At the conference the presenter had 20 minutes, on youtube I found an hour-long presentation with the same title - https://www.youtube.com/watch?v=4rHvLYhJN4k
+
+In the beginning the testers had, their separate team, which caused difficulties, which were solved by joining the testers to the development teams. Problems solved by this change:
+bugs found late in development 
+bottleneck in testing
+long time between notification and fix
+ping-pong
+
+What problems did the adoption of a tester into the team cause?
+lack of development of testing skills among dev
+degradation of quality culture (everyone responsible)
+losing the high-level view of quality
+unclear responsibility for developing improvements in the context of quality 
+understanding the complexity of the concept of quality 
+
+The solution was to add the role of Quality Engineer, who acts as a consultant and mentor in the context of the above-mentioned points.
+
+Focus areas Quality Engineer:
+Processes - defining critical processes, identifying gaps and proposing improvements
+Quality processes - introducing rituals and activities. Shift left identifying risks and preventing risks 
+Education - teaching testing skills to dev teams
+Tools - automating testing and improving efficiency
+Metrics - understanding quality gaps and enabling focus on the most important things
+
+
+#[Abandon all hope, you who enter here (EN)](https://testfest.pl/rok-2023/prelegenci-2023/tomasz-dubikowski/)
+In this presentation, Tomasz portrays a Tester as a game character who conquers successive levels of hell, acquiring more skills and tools to fight. At the end, a reward awaits the Tester. It was a nice and humorous show, and I would recommend it. 
+
+**`Summary`** <br>
+The event was very nicely organized. However, in my opinion, the only downside was the length of the presentation time slots (as allways :)). There was plenty of time between presentations for networking and discussion. Unfortunately, I didn't have to sign up for any of the workshops, and also I missed out on the after party. Although I didn't win a ticket for next year's event, but hope I will be able to attend on it in a next year and stay for the whole weekend. Leaving at 5 pm and returning at 10 pm was not the best choice. Overall, I highly recommend this event.
