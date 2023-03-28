@@ -30,7 +30,7 @@ A presentation focusing on delivering value and quality in the shortest possible
 
 At the outset, the presenter defined quality as product, process and people, and the goal of automating repetitive activities and tests to achieve the expected quality in the shortest possible time. Stressing that it is not worth automating all activities. Some tasks are easier and faster to do manually, also the aspect of repeatability is important.
 
-Testing is part of Quality Engineering but QE is much more than testing.  
+Testing is part of Quality Engineering but QE is much more than testing.   <br>
 	- 	 Quality Engineering - "Preventive" quality measures - Think about quality from the start <br>
 	-	 Testing - "Detective" quality measures <br>
 	&emsp; -	 provides information about quality and risks <br>
@@ -40,8 +40,8 @@ Testing is part of Quality Engineering but QE is much more than testing.
 
 [VOICE model](https://www.tmap.net/page/voice-model) - delivering business value
 
-[Quality features related to value and quality](https://www.tmap.net/wiki/quality-characteristics): 
-ISO25010 - quality in use
+[Quality features related to value and quality](https://www.tmap.net/wiki/quality-characteristics): <br>
+ISO25010 - quality in use <br>
 ISO25010 - product quality
 
 [Sustainability as a new quality feature](https://www.tmap.net/wiki/quality-characteristic-sustainability)
@@ -53,7 +53,7 @@ The presenter also addressed the question of whether Playwright will become a "C
 
 One of Playwright's advantages is its built-in tools, whereas in Cypress, these tools have to be installed as plug-ins, which can result in the need to check if a new version of Cypress is compatible with the plug-ins and a growing package.json file.
 
-Playwright, compared to Cypress:
+Playwright, compared to Cypress: <br>
 	-	 no watch (cy open) <br>
 	-	 no public roadmap <br>
 	-	 no GUI <br>
@@ -69,7 +69,7 @@ A customer with a disability is the same customer as a non-disabled person but h
 
 Below are the lists of tools given by the presenter
 
-How to test?
+How to test? <br>
 	-	 Checklist wcag <br>
 	-	 Technical testing with tools <br>
 	-	 Automatic scans <br>
@@ -80,13 +80,13 @@ How to test?
 	-	 Pa11y <br>
 	-	 ARC Toolkit <br>
 
-Levels of a11y checks (each of which can be part of CI)
+Levels of a11y checks (each of which can be part of CI) <br>
 	-	 Linters <br>
 	-	 Unit tests <br>
 	-	 End-to-end tests <br>
 	-	 A11y scans <br>
 
-Deployment monitoring:
+Deployment monitoring <br>
 	-	 ARC Platform <br>
 	-	 AXE Monitor <br>
 	-	 Pope.tech <br>
@@ -113,7 +113,7 @@ The author recommends following a culture of error. That is, don't sweep our stu
 
 One must also be wary of pitfalls in thinking, e.g., anchoring heuristics. An example was asking a question that suggested the answer. How old was the Dalai Lama at the time of his death? The answer had to be marked on a timeline, the maximum value on the axis influenced the answers i.e. When the max was 140, the most common answer was ~90, when the max was lower e.g. 100 the most common answer was also lower.
 
-Recommended books:
+Recommended books: <br>
 Impulse. How to make the right decisions for health, wealth and happiness <br>
 Risk Savvy - How to Make Good Decisions <br>
 Daniel Kehlmann - The traps of thinking
@@ -121,13 +121,13 @@ Daniel Kehlmann - The traps of thinking
 ###[Atlassian Approach to Quality. Shift left and Quality Engineering (EN)](https://testfest.pl/rok-2023/prelegenci-2023/jakub-cegiel/)
 Presentation of the Atlassian approach to quality assurance and a story with lessons learned on how they arrived at this approach. At the conference the presenter had 20 minutes, on [youtube](https://www.youtube.com/watch?v=4rHvLYhJN4k) I found an hour-long presentation with the same title
 
-In the beginning the testers had, their separate team, which caused difficulties, which were solved by joining the testers to the development teams. Problems solved by this change:
+In the beginning the testers had, their separate team, which caused difficulties, which were solved by joining the testers to the development teams. Problems solved by this change: <br>
 	-	 bugs found late in development <br>
 	-	 bottleneck in testing <br>
 	-	 long time between notification and fix <br>
 	-	 ping-pong <br>
 
-What problems did the joinig of a tester into the dev-team?
+What problems did the joinig of a tester into the dev-team? <br>
 	-	 lack of development of testing skills among dev <br>
 	-	 degradation of quality culture (everyone responsible) <br>
 	-	 losing the high-level view of quality <br>
@@ -136,12 +136,12 @@ What problems did the joinig of a tester into the dev-team?
 
 The solution was to add the role of Quality Engineer, who acts as a consultant and mentor in the context of the above-mentioned points.
 
-Focus areas Quality Engineer:
-Processes - defining critical processes, identifying gaps and proposing improvements
-Quality processes - introducing rituals and activities. Shift left identifying risks and preventing risks 
-Education - teaching testing skills to dev teams
-Tools - automating testing and improving efficiency
-Metrics - understanding quality gaps and enabling focus on the most important things
+Focus areas Quality Engineer: <br>
+Processes - defining critical processes, identifying gaps and proposing improvements <br>
+Quality processes - introducing rituals and activities. Shift left identifying risks and preventing risks <br>
+Education - teaching testing skills to dev teams <br>
+Tools - automating testing and improving efficiency <br> 
+Metrics - understanding quality gaps and enabling focus on the most important things <br>
 
 
 ###[Abandon all hope, you who enter here (EN)](https://testfest.pl/rok-2023/prelegenci-2023/tomasz-dubikowski/)
