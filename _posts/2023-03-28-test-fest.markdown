@@ -15,12 +15,12 @@ The conference does not have an admission fee, but participants are selected by 
 Ibis Styles Wroclaw Centrum - by the main train station, pleasant access by train
 
 **`Interesting facts`** <br>
-* At the entrance, participants were given a badge with a place for stickers, which could be obtained at the partners' stands and by performing tasks. Collecting the total, allowed to participate in a drawing for three tickets for the next year and receive a gadget with the conference logo.
-* Opportunity to participate in free workshops (additional registration - places ran out very quickly) 
-* Ask:Test - consultations with specialists in various quality fields 
-* Lunch and buffet included in the entrance fee
-* Free beer for the first 100 people at the after party 
-* Opportunity to donate gadgets we didn't like so we can use them again
+- At the entrance, participants were given a badge with a place for stickers, which could be obtained at the partners' stands and by performing tasks. Collecting the total, allowed to participate in a drawing for three tickets for the next year and receive a gadget with the conference logo.
+- Opportunity to participate in free workshops (additional registration - places ran out very quickly) 
+- Ask:Test - consultations with specialists in various quality fields 
+- Lunch and buffet included in the entrance fee
+- Free beer for the first 100 people at the after party 
+- Opportunity to donate gadgets we didn't like so we can use them again
 
 **`Selected talks`** <br>
 I have no information on whether the presentations will be available in video form.
@@ -30,17 +30,17 @@ A presentation focusing on delivering value and quality in the shortest possible
 
 At the outset, the presenter defined quality as product, process and people, and the goal of automating repetitive activities and tests to achieve the expected quality in the shortest possible time. Stressing that it is not worth automating all activities. Some tasks are easier and faster to do manually, also the aspect of repeatability is important.
 
-Testing is part of Quality Engineering but QE is much more than testing  
-Quality Engineering - "Preventive" quality measures - Think about quality from the start
-Testing - "Detective" quality measures 
-provides information about quality and risks 
-Provides assurance about the delivery of business value
-consists of: verification, validation and exploration
-DevOps - Corrective quality measures - Proactive quality improvement  
+Testing is part of Quality Engineering but QE is much more than testing.  
+- Quality Engineering - "Preventive" quality measures - Think about quality from the start
+- Testing - "Detective" quality measures 
+	- provides information about quality and risks 
+	- Provides assurance about the delivery of business value
+	- consists of: verification, validation and exploration
+- DevOps - Corrective quality measures - Proactive quality improvement  
 
 [VOICE model](https://www.tmap.net/page/voice-model) - delivering business value
 
-#[Quality features related to value and quality](https://www.tmap.net/wiki/quality-characteristics): 
+[Quality features related to value and quality](https://www.tmap.net/wiki/quality-characteristics): 
 ISO25010 - quality in use
 ISO25010 - product quality
 
@@ -54,12 +54,12 @@ The presenter also addressed the question of whether Playwright will become a "C
 One of Playwright's advantages is its built-in tools, whereas in Cypress, these tools have to be installed as plug-ins, which can result in the need to check if a new version of Cypress is compatible with the plug-ins and a growing package.json file.
 
 Playwright, compared to Cypress:
-* no watch (cy open)
-* no public roadmap
-* no GUI
-* better test reports - Trace viewer
-* concurrent tests from the box
-* less weight
+- no watch (cy open)
+- no public roadmap
+- no GUI
+- better test reports - Trace viewer
+- concurrent tests from the box
+- less weight
 
 #[Why do you need to automate accessibility testing and why is it not enough? (EN)](https://testfest.pl/rok-2023/prelegenci-2023/tomasz-bonior/)
 
@@ -70,40 +70,40 @@ A customer with a disability is the same customer as a non-disabled person but h
 Below are the lists of tools given by the presenter
 
 How to test?
-* Checklist wcag
-* Technical testing with tools
-* Automatic scans
-* IBM Equal Access Accessibility Checker
-* Google Lighthouse 
-* AXE DevTools
-* WAVE Evaluation Tool
-* Pa11y
-* ARC Toolkit
+- Checklist wcag
+- Technical testing with tools
+- Automatic scans
+- IBM Equal Access Accessibility Checker
+- Google Lighthouse 
+- AXE DevTools
+- WAVE Evaluation Tool
+- Pa11y
+- ARC Toolkit
 
 Levels of a11y checks (each of which can be part of CI)
-* Linters
-* Unit tests
-* End-to-end tests
-* A11y scans
+- Linters
+- Unit tests
+- End-to-end tests
+- A11y scans
 
 Deployment monitoring:
-* ARC Platform
-* AXE Monitor
-* Pope.tech
-* Tenon
-* AMP
-* A11ywatch
-* Asqatasun
-* Pa11y
+- ARC Platform
+- AXE Monitor
+- Pope.tech
+- Tenon
+- AMP
+- A11ywatch
+- Asqatasun
+- Pa11y
 
 #[Why are decisions like guests and how to make even the uninvited ones well? (EN)](https://testfest.pl/rok-2023/prelegenci-2023/jakub-konieczny/)
 Soft skill presentation on decision making and drawing value, lessons from decisions we dread. Helpful information, both in personal life and at work, e.g. choosing an approach, tools, or technology.  
 
 Methods to facilitate decision-making:
-* satisfaction method - making less important decisions faster
-* change of environment - catching distance from the problem being solved
-* saying the problem out loud and/or talking about it for deeper understanding
-* trying to present the problem in the simplest way (better understanding)
+- satisfaction method - making less important decisions faster
+- change of environment - catching distance from the problem being solved
+- saying the problem out loud and/or talking about it for deeper understanding
+- trying to present the problem in the simplest way (better understanding)
 
 The presenter gives two examples of decisions well made:
 A footballer changing clubs, made a list with his expectations of the club and the club's expectations of him. He then gave points to each of the items on the list (according to his priorities) and made a decision based on the sum of the points. Although his choice was surprising to those around him, the subsequent results and the form he presented indicate that he made the right decision.
@@ -122,17 +122,17 @@ Daniel Kehlmann - The traps of thinking
 Presentation of the Atlassian approach to quality assurance and a story with lessons learned on how they arrived at this approach. At the conference the presenter had 20 minutes, on youtube I found an hour-long presentation with the same title - https://www.youtube.com/watch?v=4rHvLYhJN4k
 
 In the beginning the testers had, their separate team, which caused difficulties, which were solved by joining the testers to the development teams. Problems solved by this change:
-bugs found late in development 
-bottleneck in testing
-long time between notification and fix
-ping-pong
+- bugs found late in development 
+- bottleneck in testing
+- long time between notification and fix
+- ping-pong
 
-What problems did the adoption of a tester into the team cause?
-lack of development of testing skills among dev
-degradation of quality culture (everyone responsible)
-losing the high-level view of quality
-unclear responsibility for developing improvements in the context of quality 
-understanding the complexity of the concept of quality 
+What problems did the joinig of a tester into the dev-team?
+- lack of development of testing skills among dev
+- degradation of quality culture (everyone responsible)
+- losing the high-level view of quality
+- unclear responsibility for developing improvements in the context of quality 
+- understanding the complexity of the concept of quality 
 
 The solution was to add the role of Quality Engineer, who acts as a consultant and mentor in the context of the above-mentioned points.
 
