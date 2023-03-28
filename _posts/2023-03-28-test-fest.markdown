@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "test:fest 2023"
-subtitle: "About my 1st bug bounty report"
+subtitle: "My summary of test:fest 2023"
 date:   2023-03-28 22:30:00 +0200
 categories: Conferences
 background: 'https://raw.githubusercontent.com/Maleckidd/Maleckidd.github.io/gh-pages/img/posts/03.JPG'
