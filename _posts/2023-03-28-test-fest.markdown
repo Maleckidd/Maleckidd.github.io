@@ -99,7 +99,7 @@ Deployment monitoring:
 ###[Why are decisions like guests and how to make even the uninvited ones well? (EN)](https://testfest.pl/rok-2023/prelegenci-2023/jakub-konieczny/)
 Soft skill presentation on decision making and drawing value, lessons from decisions we dread. Helpful information, both in personal life and at work, e.g. choosing an approach, tools, or technology.  
 
-Methods to facilitate decision-making:
+Methods to facilitate decision-making: <br>
 	-	 satisfaction method - making less important decisions faster <br>
 	-	 change of environment - catching distance from the problem being solved <br>
 	-	 saying the problem out loud and/or talking about it for deeper understanding <br>
