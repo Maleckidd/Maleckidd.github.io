@@ -33,9 +33,9 @@ At the outset, the presenter defined quality as product, process and people, and
 Testing is part of Quality Engineering but QE is much more than testing.  
 	- 	 Quality Engineering - "Preventive" quality measures - Think about quality from the start <br>
 	-	 Testing - "Detective" quality measures <br>
-		-	 provides information about quality and risks <br>
-		-	 Provides assurance about the delivery of business value <br>
-		-	 consists of: verification, validation and exploration <br>
+	&emsp; -	 provides information about quality and risks <br>
+	&emsp; -	 provides assurance about the delivery of business value <br>
+	&emsp; -	 consists of: verification, validation and exploration <br>
 	-	 DevOps - Corrective quality measures - Proactive quality improvement <br>
 
 [VOICE model](https://www.tmap.net/page/voice-model) - delivering business value
@@ -114,8 +114,8 @@ The author recommends following a culture of error. That is, don't sweep our stu
 One must also be wary of pitfalls in thinking, e.g., anchoring heuristics. An example was asking a question that suggested the answer. How old was the Dalai Lama at the time of his death? The answer had to be marked on a timeline, the maximum value on the axis influenced the answers i.e. When the max was 140, the most common answer was ~90, when the max was lower e.g. 100 the most common answer was also lower.
 
 Recommended books:
-Impulse. How to make the right decisions for health, wealth and happiness
-Risk Savvy - How to Make Good Decisions
+Impulse. How to make the right decisions for health, wealth and happiness <br>
+Risk Savvy - How to Make Good Decisions <br>
 Daniel Kehlmann - The traps of thinking
 
 ###[Atlassian Approach to Quality. Shift left and Quality Engineering (EN)](https://testfest.pl/rok-2023/prelegenci-2023/jakub-cegiel/)
