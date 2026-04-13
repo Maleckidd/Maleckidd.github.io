@@ -1,0 +1,102 @@
+- title: Experience
+  type: time_table
+  contents:
+    - title: Senior Test Automation Engineer
+      institution: Allegro, Poland
+      year: Apr 2024 – now
+      description:
+        - Complex testing of web applications and native iOS and Android apps.
+        - Web test automation with Cypress.
+        - Ensuring quality across the entire Smart loyalty program division (5 dev teams).
+        - Coordinating projects such as the Smart lottery and coordination of testing during expansion into new markets.
+        - Building tools to support testing across the company.
+        - Recruitment team member.
+
+    - title: Test Automation Engineer
+      institution: Allegro, Poland
+      year: Nov 2023 – Mar 2024
+
+    - title: Senior Software Test Engineer
+      institution: Allegro, Poland
+      year: Jun 2022 – Oct 2023
+
+    - title: QA Engineer
+      institution: Infakt Sp. z o.o., Poland
+      year: Nov 2019 – May 2022
+      description:
+        - Complex testing of web applications (REST API, security, acceptance tests).
+        - Test automation with Java/Selenium and Postman.
+        - BDD test automation with Cucumber.
+        - Collaboration with the dev team (Agile/Scrum) and customer service.
+
+    - title: Software Tester
+      institution: Efento, Poland
+      year: Jul 2018 – Oct 2019
+      description:
+        - Testing of web applications (REST API, acceptance tests), mobile applications (Android), Bluetooth and IoT (hardware/software).
+        - Technical documentation, risk analysis and test reports.
+        - Implementation of QA processes into company structures.
+        - Introduced web application test automation with Cypress.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: MSc, Electrical Engineering
+      institution: Politechnika Lubelska (Lublin University of Technology), Poland
+      year: 2017 – 2018
+
+    - title: BEng, Electrical Engineering
+      institution: Politechnika Lubelska (Lublin University of Technology), Poland
+      year: 2012 – 2017
+
+    - title: ERASMUS Exchange — Electrical Engineering
+      institution: Universidad de Jaén, Spain
+      year: 2015
+
+    - title: IT Technician
+      institution: ZSP im. Jana Pawła II, Radzyń Podlaski, Poland
+      year: 2008 – 2012
+
+- title: Certifications
+  type: time_table
+  contents:
+    - title: Bezpieczeństwo Aplikacji Mobilnych (Mobile Application Security)
+      institution: Niebezpiecznik.pl
+      year: Sep 2023
+
+    - title: Atakowanie i Ochrona Webaplikacji (Web Application Security)
+      institution: Niebezpiecznik.pl
+      year: Sep 2021
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Test Automation
+      items:
+        - Cypress
+        - Playwright
+        - Selenium
+    - title: Languages
+      items:
+        - JavaScript
+        - TypeScript
+        - Java
+    - title: API & Tools
+      items:
+        - Postman
+        - Cucumber (BDD)
+    - title: Security Testing
+      items:
+        - Burp Suite
+        - OWASP ZAP
+    - title: Project Management
+      items:
+        - Jira
+        - Zephyr
+    - title: Testing Types
+      items:
+        - Web Application Testing
+        - Mobile Testing (iOS, Android)
+        - API Testing
+        - IoT Testing
+        - Security Testing
