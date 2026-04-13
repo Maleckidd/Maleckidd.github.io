@@ -10,7 +10,7 @@ profile:
   image_circular: false
   more_info:
 
-news: true
+news: false
 selected_papers: false
 social: true
 ---
