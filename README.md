@@ -1,2 +1,5 @@
 # Maleckidd.github.io
-Notes and travis integration to build it
+
+Personal brand / blog site for Damian Malecki, built with Jekyll and the al-folio theme.
+
+**Live site:** https://maleckidd.github.io
