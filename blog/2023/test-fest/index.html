@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      My takeaways from test:fest 2023 | Damian Małecki
+    
+  
+</title>
+<meta name="author" content="Damian Małecki">
+<meta name="description" content="My notes and key takeaways from test:fest 2023 — a quality engineering conference in Wrocław, Poland.">
+
+  <meta name="keywords" content="test automation, cypress, playwright, QA, software testing, quality engineering">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+<!-- Bootstrap Table -->
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+<!-- pseudocode -->
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AA&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="https://maleckidd.github.io/blog/2023/test-fest/">
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+<!-- GeoJSON support via Leaflet -->
+
+
+<!-- diff2html -->
+
+
+<!-- GitHub Project Introduction Section -->
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            
+              <span class="font-weight-bold">Damian</span>
+            
+            
+            
+              <span class="font-weight-bold">Małecki</span>
+            
+          
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">about
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  
+                  <a class="nav-link" href="/blog/">blog
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/cv/">cv
+                    
+                  </a>
+                </li>
+              
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+
+
+
+
+
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">My takeaways from test:fest 2023</h1>
+    <p class="post-meta">
+      Created in March 28, 2023
+      
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <a href="/blog/2023"> <i class="fa-solid fa-calendar fa-sm"></i> 2023 </a>
+      
+      
+          ·  
+        
+          
+            <a href="/blog/tag/conferences"> <i class="fa-solid fa-hashtag fa-sm"></i> conferences</a>
+          
+          
+             
+          
+        
+          
+            <a href="/blog/tag/quality-engineering"> <i class="fa-solid fa-hashtag fa-sm"></i> quality-engineering</a>
+          
+          
+        
+      
+
+      
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p><strong><code class="language-plaintext highlighter-rouge">About the Conference</code></strong></p>
+
+<p><a href="https://testfest.pl/" rel="external nofollow noopener" target="_blank">test:fest</a> is a conference that caters to people interested in software quality. The speakers mainly focus on different aspects of quality and its assurance.</p>
+
+<p>The conference does not have an admission fee, but participants are selected by the organizers who read through all submissions. To get a ticket, interested individuals need to fill out a registration form and justify their desire to attend.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">Location</code></strong></p>
+
+<p>Ibis Styles Wrocław Centrum — by the main train station, pleasant access by train.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">Interesting facts</code></strong></p>
+
+<ul>
+  <li>At the entrance, participants were given a badge with a place for stickers, which could be obtained at the partners’ stands and by performing tasks. Collecting the total allowed participation in a drawing for three tickets for the next year and a gadget with the conference logo.</li>
+  <li>Opportunity to participate in free workshops (additional registration — places ran out very quickly)</li>
+  <li>Ask:Test — consultations with specialists in various quality fields</li>
+  <li>Lunch and buffet included in the entrance fee</li>
+  <li>Free beer for the first 100 people at the after party</li>
+  <li>Opportunity to donate gadgets we didn’t like so they can be used again</li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">Selected talks</code></strong></p>
+
+<h3 id="sustainability--the-new-quality-characteristic-en"><a href="https://testfest.pl/rok-2023/rik-marselis/" rel="external nofollow noopener" target="_blank">Sustainability — the new quality characteristic (EN)</a></h3>
+
+<p>A presentation focusing on delivering value and quality in the shortest possible time and the aspect of sustainability as a new quality characteristic. Details and development of the presentation topic are included in the <a href="https://www.tmap.net/book/quality-devops-teams" rel="external nofollow noopener" target="_blank">book</a> the speaker promoted and on the <a href="https://www.tmap.net/page/news-and-blogs" rel="external nofollow noopener" target="_blank">blog</a> (<a href="https://www.tmap.net/page/download-checklists" rel="external nofollow noopener" target="_blank">Checklists</a>).</p>
+
+<p>At the outset, the presenter defined quality as product, process and people, and the goal of automating repetitive activities and tests to achieve the expected quality in the shortest possible time. Stressing that it is not worth automating all activities. Some tasks are easier and faster to do manually; also the aspect of repeatability is important.</p>
+
+<p>Testing is part of Quality Engineering but QE is much more than testing.</p>
+
+<ul>
+  <li>
+<strong>Quality Engineering</strong> — “Preventive” quality measures. Think about quality from the start.</li>
+  <li>
+<strong>Testing</strong> — “Detective” quality measures. Provides information about quality and risks; provides assurance about the delivery of business value; consists of: verification, validation and exploration.</li>
+  <li>
+<strong>DevOps</strong> — Corrective quality measures. Proactive quality improvement.</li>
+</ul>
+
+<p><a href="https://www.tmap.net/page/voice-model" rel="external nofollow noopener" target="_blank">VOICE model</a> — delivering business value</p>
+
+<p><a href="https://www.tmap.net/wiki/quality-characteristics" rel="external nofollow noopener" target="_blank">Quality features related to value and quality</a>:
+ISO25010 — quality in use / ISO25010 — product quality</p>
+
+<p><a href="https://www.tmap.net/wiki/quality-characteristic-sustainability" rel="external nofollow noopener" target="_blank">Sustainability as a new quality feature</a></p>
+
+<hr>
+
+<h3 id="will-playwright-become-a-cypress-killer-in-2023-en"><a href="https://testfest.pl/rok-2023/prelegenci-2023/arkadiusz-jelonek/" rel="external nofollow noopener" target="_blank">Will Playwright become a Cypress killer in 2023? (EN)</a></h3>
+
+<p>The presenter is a test automation specialist with experience in Cypress and Playwright, among other tools. During the presentation, he discussed the history of Playwright’s creation and compared the two tools without disregarding either one. He highlighted the importance of being able to develop quickly and work well within a team, including ease of use for the whole team and the ability to conduct code reviews.</p>
+
+<p>The presenter addressed the question of whether Playwright will become a “Cypress killer” in 2023. He stated that this is unlikely due to Cypress’ popularity on npm, which has a large base of current users. However, Playwright has gained more attention on GitHub in just three years compared to Cypress in eight years, indicating that it is rapidly gaining popularity.</p>
+
+<p>One of Playwright’s advantages is its built-in tools, whereas in Cypress, these tools have to be installed as plug-ins, which can result in the need to check if a new version of Cypress is compatible with the plug-ins and a growing <code class="language-plaintext highlighter-rouge">package.json</code> file.</p>
+
+<p>Playwright, compared to Cypress:</p>
+
+<ul>
+  <li>No watch (cy open)</li>
+  <li>No public roadmap</li>
+  <li>No GUI</li>
+  <li>Better test reports — Trace viewer</li>
+  <li>Concurrent tests out of the box</li>
+  <li>Less weight</li>
+</ul>
+
+<hr>
+
+<h3 id="why-do-you-need-to-automate-accessibility-testing-and-why-is-it-not-enough-en"><a href="https://testfest.pl/rok-2023/prelegenci-2023/tomasz-bonior/" rel="external nofollow noopener" target="_blank">Why do you need to automate accessibility testing and why is it not enough? (EN)</a></h3>
+
+<p>From 2024, the EU is introducing an accessibility requirement in the e-commerce, banking, telecommunications, and ebook industries, with penalties for failure to comply. The author stresses that accessibility is an important aspect of quality, and cites the WCAG standard as a good source of information on it. He points out that one of the most important aspects of accessibility testing is to include people with disabilities in the tests — no tool can 100% convey the perspective of such a person.</p>
+
+<p><strong>How to test:</strong></p>
+
+<ul>
+  <li>Checklist WCAG</li>
+  <li>Technical testing with tools</li>
+  <li>Automatic scans: IBM Equal Access Accessibility Checker, Google Lighthouse, AXE DevTools, WAVE Evaluation Tool, Pa11y, ARC Toolkit</li>
+</ul>
+
+<p><strong>Levels of a11y checks (each can be part of CI):</strong></p>
+
+<ul>
+  <li>Linters</li>
+  <li>Unit tests</li>
+  <li>End-to-end tests</li>
+  <li>A11y scans</li>
+</ul>
+
+<p><strong>Deployment monitoring:</strong></p>
+
+<ul>
+  <li>ARC Platform, AXE Monitor, Pope.tech, Tenon, AMP, A11ywatch, Asqatasun, Pa11y</li>
+</ul>
+
+<hr>
+
+<h3 id="why-are-decisions-like-guests-and-how-to-make-even-the-uninvited-ones-well-en"><a href="https://testfest.pl/rok-2023/prelegenci-2023/jakub-konieczny/" rel="external nofollow noopener" target="_blank">Why are decisions like guests and how to make even the uninvited ones well? (EN)</a></h3>
+
+<p>Soft skill presentation on decision making and drawing value from decisions we dread. Helpful information both in personal life and at work, e.g., choosing an approach, tools, or technology.</p>
+
+<p>Methods to facilitate decision-making:</p>
+
+<ul>
+  <li>Satisfaction method — making less important decisions faster</li>
+  <li>Change of environment — catching distance from the problem being solved</li>
+  <li>Saying the problem out loud and/or talking about it for deeper understanding</li>
+  <li>Trying to present the problem in the simplest way (better understanding)</li>
+</ul>
+
+<p>The author recommends following a culture of error — don’t sweep stumbles under the rug, learn from them, and correct and prevent them in the future.</p>
+
+<p>Recommended books:</p>
+<ul>
+  <li><em>Impulse. How to make the right decisions for health, wealth and happiness</em></li>
+  <li><em>Risk Savvy — How to Make Good Decisions</em></li>
+  <li><em>Daniel Kehlmann — The traps of thinking</em></li>
+</ul>
+
+<hr>
+
+<h3 id="atlassian-approach-to-quality--shift-left-and-quality-engineering-en"><a href="https://testfest.pl/rok-2023/prelegenci-2023/jakub-cegiel/" rel="external nofollow noopener" target="_blank">Atlassian Approach to Quality — Shift left and Quality Engineering (EN)</a></h3>
+
+<p>Presentation of the Atlassian approach to quality assurance and a story with lessons learned. At the conference the presenter had 20 minutes; on <a href="https://www.youtube.com/watch?v=4rHvLYhJN4k" rel="external nofollow noopener" target="_blank">YouTube</a> there is an hour-long presentation with the same title.</p>
+
+<p>In the beginning the testers had their own separate team, which caused difficulties, solved by joining testers to development teams. Problems solved by this change:</p>
+
+<ul>
+  <li>Bugs found late in development</li>
+  <li>Bottleneck in testing</li>
+  <li>Long time between notification and fix</li>
+  <li>Ping-pong between dev and QA</li>
+</ul>
+
+<p>What problems did joining a tester into the dev-team create?</p>
+
+<ul>
+  <li>Lack of development of testing skills among dev</li>
+  <li>Degradation of quality culture (everyone responsible = no one responsible)</li>
+  <li>Losing the high-level view of quality</li>
+  <li>Unclear responsibility for developing improvements in the context of quality</li>
+</ul>
+
+<p>The solution was to add the role of Quality Engineer, who acts as a consultant and mentor. Focus areas:</p>
+
+<ul>
+  <li>
+<strong>Processes</strong> — defining critical processes, identifying gaps and proposing improvements</li>
+  <li>
+<strong>Quality processes</strong> — introducing rituals and activities, shift left identifying and preventing risks</li>
+  <li>
+<strong>Education</strong> — teaching testing skills to dev teams</li>
+  <li>
+<strong>Tools</strong> — automating testing and improving efficiency</li>
+  <li>
+<strong>Metrics</strong> — understanding quality gaps and enabling focus on the most important things</li>
+</ul>
+
+<hr>
+
+<h3 id="abandon-all-hope-you-who-enter-here-en"><a href="https://testfest.pl/rok-2023/prelegenci-2023/tomasz-dubikowski/" rel="external nofollow noopener" target="_blank">Abandon all hope, you who enter here (EN)</a></h3>
+
+<p>In this presentation, Tomasz portrays a Tester as a game character who conquers successive levels of hell, acquiring more skills and tools to fight. At the end, a reward awaits the Tester. It was a nice and humorous show — I would recommend it.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">Summary</code></strong></p>
+
+<p>The event was very nicely organized. In my opinion, the only downside was the length of the presentation time slots (as always). There was plenty of time between presentations for networking and discussion. Unfortunately, I didn’t manage to sign up for any of the workshops, and also missed the after party. Although I didn’t win a ticket for next year’s event, I hope I will be able to attend in a future year and stay for the whole weekend. Overall, I highly recommend this event.</p>
+
+    </div>
+  </article>
+
+  
+
+
+
+  
+    
+      
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/bugBonty-first-try/">Hacking of e-commerce platform</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/cypress-waits/">How to cy.wait(enough)</a>
+  </li>
+
+
+
+    
+  
+
+  
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    
+
+    <div class="container">
+      © Copyright 2026
+      Damian
+      
+      Małecki. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+
+      
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/assets/js/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+<!-- Bootstrap Table -->
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
+<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+
+    
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    /*
+     * This JavaScript code has been adapted from the article
+     * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar,
+     * published on the website https://css-tricks.com on the 7th of May, 2014.
+     * Couple of changes were made to the original code to make it compatible
+     * with the `al-foio` theme.
+     */
+    const progressBar = $('#progress');
+    /*
+     * We set up the bar after all elements are done loading.
+     * In some cases, if the images in the page are larger than the intended
+     * size they'll have on the page, they'll be resized via CSS to accomodate
+     * the desired size. This mistake, however, breaks the computations as the
+     * scroll size is computed as soon as the elements finish loading.
+     * To account for this, a minimal delay was introduced before computing the
+     * values.
+     */
+    window.onload = function () {
+      setTimeout(progressBarSetup, 50);
+    };
+    /*
+     * We set up the bar according to the browser.
+     * If the browser supports the progress element we use that.
+     * Otherwise, we resize the bar thru CSS styling
+     */
+    function progressBarSetup() {
+      if ('max' in document.createElement('progress')) {
+        initializeProgressElement();
+        $(document).on('scroll', function () {
+          progressBar.attr({ value: getCurrentScrollPosition() });
+        });
+        $(window).on('resize', initializeProgressElement);
+      } else {
+        resizeProgressBar();
+        $(document).on('scroll', resizeProgressBar);
+        $(window).on('resize', resizeProgressBar);
+      }
+    }
+    /*
+     * The vertical scroll position is the same as the number of pixels that
+     * are hidden from view above the scrollable area. Thus, a value > 0 is
+     * how much the user has scrolled from the top
+     */
+    function getCurrentScrollPosition() {
+      return $(window).scrollTop();
+    }
+
+    function initializeProgressElement() {
+      let navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      progressBar.css({ top: navbarHeight });
+      progressBar.attr({
+        max: getDistanceToScroll(),
+        value: getCurrentScrollPosition(),
+      });
+    }
+    /*
+     * The offset between the html document height and the browser viewport
+     * height will be greater than zero if vertical scroll is possible.
+     * This is the distance the user can scroll
+     */
+    function getDistanceToScroll() {
+      return $(document).height() - $(window).height();
+    }
+
+    function resizeProgressBar() {
+      progressBar.css({ width: getWidthPercentage() + '%' });
+    }
+    // The scroll ratio equals the percentage to resize the bar
+    function getWidthPercentage() {
+      return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+    }
+  </script>
+
+
+    
+
+    
+
+    
+
+    
+  <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
+    addBackToTop();
+  </script>
+
+
+    
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script>
+    let searchTheme = determineComputedTheme();
+    const ninjaKeys = document.querySelector('ninja-keys');
+
+    if (searchTheme === 'dark') {
+      ninjaKeys.classList.add('dark');
+    } else {
+      ninjaKeys.classList.remove('dark');
+    }
+
+    const openSearchModal = () => {
+      // collapse navbarNav if expanded on mobile
+      const $navbarNav = $('#navbarNav');
+      if ($navbarNav.hasClass('show')) {
+        $navbarNav.collapse('hide');
+      }
+      ninjaKeys.open();
+    };
+  </script>
+  <script>
+    // get the ninja-keys element
+    const ninja = document.querySelector('ninja-keys');
+
+    // add the home and posts menu items
+    ninja.data = [{
+        id: "nav-about",
+        title: "about",
+        section: "Navigation",
+        handler: () => {
+          window.location.href = "/";
+        },
+      },{id: "nav-blog",
+              title: "blog",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "nav-cv",
+              title: "cv",
+              description: "Damian Małecki, Senior Test Automation Engineer.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/cv/";
+              },
+            },{id: "post-my-takeaways-from-test-fest-2023",
+          
+            title: "My takeaways from test:fest 2023",
+          
+          description: "My notes and key takeaways from test:fest 2023 — a quality engineering conference in Wrocław, Poland.",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2023/test-fest/";
+            
+          },
+        },{id: "post-hacking-of-e-commerce-platform",
+          
+            title: "Hacking of e-commerce platform",
+          
+          description: "My first bug bounty report: 10 security findings in an e-commerce platform and what I learned from the process.",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2022/bugBonty-first-try/";
+            
+          },
+        },{id: "post-how-to-cy-wait-enough",
+          
+            title: "How to cy.wait(enough)",
+          
+          description: "Practical guide to waits in Cypress — from static waits to smart retries with cypress-recurse.",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2022/cypress-waits/";
+            
+          },
+        },{id: "news-completed-the-web-application-security-course-at-niebezpiecznik-pl-https-niebezpiecznik-pl",
+              title: 'Completed the **Web Application Security** course at [Niebezpiecznik.pl](https://niebezpiecznik.pl).',
+              description: "",
+              section: "News",},{id: "news-completed-the-mobile-application-security-course-at-niebezpiecznik-pl-https-niebezpiecznik-pl",
+              title: 'Completed the **Mobile Application Security** course at [Niebezpiecznik.pl](https://niebezpiecznik.pl).',
+              description: "",
+              section: "News",},{id: "news-promoted-to-senior-test-automation-engineer-at-allegro-https-allegro-pl",
+              title: 'Promoted to **Senior Test Automation Engineer** at [Allegro](https://allegro.pl).',
+              description: "",
+              section: "News",},{
+          id: 'light-theme',
+          title: 'Change theme to light',
+          description: 'Change the theme of the site to Light',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("light");
+          },
+        },
+        {
+          id: 'dark-theme',
+          title: 'Change theme to dark',
+          description: 'Change the theme of the site to Dark',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("dark");
+          },
+        },
+        {
+          id: 'system-theme',
+          title: 'Use system default theme',
+          description: 'Change the theme of the site to System Default',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("system");
+          },
+        },];
+  </script>
+  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
+
+
+  </body>
+</html>
