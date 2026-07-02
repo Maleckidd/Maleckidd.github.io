@@ -11,6 +11,7 @@ I like finding what's broken: in software, in test suites, and in processes. The
 ## 🔭 What I'm working on
 
 - **AI-augmented QA workflows** — meta-prompts for test case generation, agentic coding with Claude Code, and verifying AI-generated code for logic and flaws
+- **Security-aware testing** — using Burp Suite and OWASP ZAP in day-to-day QA work; web security certified (Niebezpiecznik.pl)
 - **Shipping side projects** — because a tester who builds understands developers better
 
 ## 📌 Highlighted projects
