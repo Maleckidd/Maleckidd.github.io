@@ -23,7 +23,7 @@ I like finding what's broken: in software, in test suites, and in processes. The
 
 ## 🛠 Stack
 
-`TypeScript` `JavaScript` `Java` · `Playwright` `Cypress` `Selenium` · web / mobile (iOS & Android) / API / IoT · `Burp Suite` `OWASP ZAP` · `Claude Code` & agentic workflows
+`TypeScript` `JavaScript` `Java` · `Playwright` `Cypress` `Selenium` · `web / mobile (iOS & Android)` / `API` / `IoT` · `Burp Suite` `OWASP ZAP` · `Claude Code` & `agentic workflows`
 
 ## 🏃 Off the keyboard
 
@@ -32,4 +32,4 @@ Running, climbing, cooking (hence KeepTaste).
 ## 📫 Reach me
 
 - 🌐 [maleckidd.github.io](https://maleckidd.github.io/)
-- 💼 [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/damian-malecki/))
+- 💼 [LinkedIn](https://www.linkedin.com/in/damian-malecki/)
