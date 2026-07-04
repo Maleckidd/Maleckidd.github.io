@@ -6,7 +6,7 @@ title: blank
 first_name: Damian
 middle_name:
 last_name: Małecki
-email:
+email: maleckidd+gh@gmail.com
 description: >
   Senior Test Automation Engineer at Allegro. 8+ years in software quality,
   specializing in Cypress, Playwright, web & mobile testing.
@@ -56,9 +56,9 @@ max_width: 930px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 
-serve_og_meta: false
-serve_schema_org: false
-og_image:
+serve_og_meta: true
+serve_schema_org: true
+og_image: https://maleckidd.github.io/assets/img/prof_pic.jpg
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -173,7 +173,7 @@ announcements:
   limit: 5
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: true
   limit: 3
 
