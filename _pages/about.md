@@ -12,7 +12,7 @@ profile:
 
 news: false
 selected_papers: false
-social: true
+social: false
 ---
 
 Senior Test Automation Engineer at Allegro with 8+ years of experience in software quality.
