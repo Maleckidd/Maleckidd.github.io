@@ -268,7 +268,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: [cypress, playwright, test-automation, security, bug-bounty, conferences, quality-engineering]
+display_tags: [cypress, playwright, test-automation, security, bug-bounty, conferences, quality-engineering, ai]
 display_categories: []
 
 # -----------------------------------------------------------------------------
