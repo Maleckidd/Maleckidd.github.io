@@ -21,3 +21,7 @@ coordinating projects such as the Smart lottery. Specialized in test automation 
 and Playwright, web and mobile application testing, and quality engineering. Previously helped
 build QA processes at Infakt and Efento. Electrical Engineering background (MSc, Lublin
 University of Technology) with international experience including ERASMUS in Spain.
+
+Outside of work I ship side projects — most recently
+<a href="https://play.google.com/store/apps/details?id=com.damianmalecki.keeptaste" target="_blank">KeepTaste</a>,
+an offline-first recipe and shopping list app built with React Native and Expo, now live on Google Play.

@@ -20,7 +20,7 @@ I like finding what's broken: in software, in test suites, and in processes. The
 |---|---|
 | [CypressExample-OWASPJuiceShop](https://github.com/Maleckidd/CypressExample-OWASPJuiceShop) | E2E test suite for OWASP Juice Shop — QA meets security testing |
 | [ai-starter](https://github.com/Maleckidd/ai-starter) | Opinionated starter setup for AI-assisted development projects |
-| [KeepTaste](https://github.com/Maleckidd/KeepTaste) | Offline-first recipe & shopping list app (React Native + Expo + SQLite) |
+| [KeepTaste](https://github.com/Maleckidd/KeepTaste) — [📱 Google Play](https://play.google.com/store/apps/details?id=com.damianmalecki.keeptaste) | Offline-first recipe & shopping list app (React Native + Expo + SQLite) — **live on Google Play** |
 
 ## 🛠 Stack
 
